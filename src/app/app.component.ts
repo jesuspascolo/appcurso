@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+//Exportamos nuestro componente para poder usarlo en otras plantillas.
 export class AppComponent {
-  title = 'app';
+  destino: string = 'Universo';
 }
