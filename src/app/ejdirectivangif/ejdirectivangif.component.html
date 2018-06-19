@@ -1,0 +1,25 @@
+<div class="container">
+  <h3>¿Cual es la capital de España?</h3>
+  <input type="text" class="form-control" [(ngModel)]="capital">
+  <p *ngIf="!capital; else correcto">Complete la pregunta</p>
+  <ng-template #correcto>
+    <h4 *ngIf="setResultado(); else incorrecto">¡CORRECTO!</h4>
+  </ng-template>
+  <ng-template #incorrecto>
+    <h4>Lo siento, inténtelo de nuevo ...</h4>
+  </ng-template>
+  <!--<label>Nombre y apellidos:</label>
+  <input type="text"
+        class="form-control"
+        placeholder="Complete su nombre y apellidos"
+        [(ngModel)]="nombre">
+  <hr>
+  <button type="submit"
+          class="btn btn-primary"
+          *ngIf="nombre; else desactivado">
+  Enviar
+  </button>
+  <ng-template #desactivado>
+      <button type="submit" class="btn btn-primary" disabled>Enviar</button>
+  </ng-template>-->
+</div>
